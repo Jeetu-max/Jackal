@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF _
+
+System: 8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FitForge Wellness offers personalized fitness coaching, diet guidance, and virtual training to help you achieve your health goals. Book your first session today!">
+    <meta name="keywords" content="fitness coaching, personal training, diet guidance, virtual coaching, FitForge Wellness">
+    <meta name="author" content="FitForge Wellness">
+    <title>FitForge Wellness - Your Path to Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom TailwindCSS styles */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-inter">
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/+919876543210" target="_blank" class="whatsapp-float">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp Chat" class="w-12 h-12">
+    </a>
+
+    <!-- Header -->
+    <header class="bg-black text-white py-6">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold">FitForge Wellness</h1>
+            <nav class="space-x-4">
+                <a href="#home" class="hover:text-lime-400 transition">Home</a>
+                <a href="#services" class="hover:text-lime-400 transition">Services</a>
+                <a href="#about" class="hover:text-lime-400 transition">About</a>
+                <a href="#contact" class="hover:text-lime-400 transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main id="home" class="relative">
+        <section class="bg-black text-white py-20 text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 fade-in">Forge Your Fitness Journey</h2>
+                <p class="text-lg md:text-xl mb-6 fade-in">Transform your body and mind with personalized coaching from FitForge Wellness.</p>
+                <a href="#contact" class="bg-lime-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-lime-500 transition fade-in">Book Your First Session</a>
+            </div>
+            <img src="https://unsplash.it/1200/600?image=1081" alt="Fitness Hero Image" class="w-full h-96 object-cover mt-8">
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12 fade-in">Our Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg fade-in">
+                        <img src="https://unsplash.it/300/200?image=1082" alt="Personalized Plans" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Personalized Plans</h3>
+                        <p>Tailored workout routines designed to fit your goals, fitness level, and lifestyle.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg fade-in">
+                        <img src="https://unsplash.it/300/200?image=1083" alt="Diet Guidance" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Diet Guidance</h3>
+                        <p>Custom nutrition plans to fuel your body and optimize performance.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg fade-in">
+                        <img src="https://unsplash.it/300/200?image=1084" alt="Virtual Coaching" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Virtual Coaching</h3>
+                        <p>Live online sessions to keep you motivated and accountable from anywhere.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+                <img src="https://unsplash.it/500/500?image=1085" alt="About FitForge Wellness" class="w-full md:w-1/2 h-80 object-cover rounded-lg mb-6 md:mb-0 md:mr-8 fade-in">
+                <div class="fade-in">
+                    <h2 class="text-3xl font-bold mb-4">About FitForge Wellness</h2>
+                    <p class="text-lg">At FitForge Wellness, we believe fitness is a journey of transformation. Our expert coaches provide personalized guidance to help you build strength, confidence, and lasting habits. With a focus on holistic wellness, we’re here to forge your path to a healthier you.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12 fade-in">What Our Clients Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg fade-in">
+                        <p class="italic mb-4">"FitForge transformed my fitness routine! The personalized plans kept me motivated."</p>
+                        <p class="font-semibold">— Priya M., Athlete</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg fade-in">
+                        <p class="italic mb-4">"The diet guidance was a game-changer. I feel stronger and healthier!"</p>
+                        <p class="font-semibold">— Rohan S., Entrepreneur</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg fade-in">
+                        <p class="italic mb-4">"Virtual coaching made it so easy to stay consistent from home."</p>
+                        <p class="font-semibold">— Anjali K., Professional</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="contact" class="py-16 bg-black text-white text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-4 fade-in">Ready to Transform?</h2>
+                <p class="text-lg mb-6 fade-in">Join FitForge Wellness today and start your journey to a healthier you.</p>
+                <a href="https://wa.me/+919876543210" target="_blank" class="bg-lime-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-lime-500 transition fade-in">Chat on WhatsApp</a>
+                <form class="mt-8 max-w-lg mx-auto flex flex-col gap-4 fade-in">
+                    <input type="text" name="name" placeholder="Your Name" required class="p-3 rounded-lg text-black">
+                    <input type="email" name="email" placeholder="Your Email" required class="p-3 rounded-lg text-black">
+                    <textarea name="goal" placeholder="Your Fitness Goal" required class="p-3 rounded-lg text-black h-32"></textarea>
+                    <button type="submit" class="bg-lime-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-lime-500 transition">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-xl font-bold mb-4">FitForge Wellness</h3>
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="https://linkedin.com" target="_blank"><img src="https://img.icons8.com/ios-filled/24/ffffff/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://instagram.com" target="_blank"><img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram"></a>
+                <a href="https://youtube.com" target="_blank"><img src="https://img.icons8.com/ios-filled/24/ffffff/youtube-play.png" alt="YouTube"></a>
+            </div>
+            <p>© 2025 FitForge Wellness. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Minimal JavaScript for Fade-In Animation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.fade-in');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
